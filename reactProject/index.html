@@ -7,11 +7,16 @@
 </head>
 <body>
     <h2>hello hemanth</h2>
-    <button onclick="clickEvent">click me</button>
+    <button id="buton" draggable="true">click me</button>
     <script>
         let clickEvent=function myFunction(e) {
             console.log(e);
+            
         }
+        let b= document.getElementById('buton');
+        b.addEventListener('click',clickEvent);
+        b.addEventListener('drag',clickEvent);
+        
     </script>
 </body>
 </html>
